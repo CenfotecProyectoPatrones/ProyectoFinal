@@ -28,19 +28,6 @@ public abstract  class Solicitud implements State{
 	public void setDocumento(IDocumento documento) {
 		this.documento = documento;
 	}
-
-	@Override
-	public abstract String solicitar();
-	@Override
-	public abstract String aceptar();
-	@Override
-	public abstract String rechazar();
-	@Override
-	public abstract String verificar();
-	@Override
-	public abstract String notificar();
-	@Override
-	public abstract String finalizar();
 	
 	
 }
