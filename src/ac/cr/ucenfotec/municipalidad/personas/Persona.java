@@ -9,6 +9,15 @@ public class Persona {
 	protected LocalDate fechaNacimiento;
 	protected boolean estado;
 	
+	public Persona(String nombreCompleto, String cedulaIdentidad, String estadoCivil, LocalDate fechaNacimiento,
+			boolean estado) {
+		super();
+		this.nombreCompleto = nombreCompleto;
+		this.cedulaIdentidad = cedulaIdentidad;
+		this.estadoCivil = estadoCivil;
+		this.fechaNacimiento = fechaNacimiento;
+		this.estado = estado;
+	}
 	
 	public String getNombreCompleto() {
 		return nombreCompleto;

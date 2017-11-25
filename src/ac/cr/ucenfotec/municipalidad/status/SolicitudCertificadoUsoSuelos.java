@@ -1,6 +1,14 @@
 package ac.cr.ucenfotec.municipalidad.status;
 
+import ac.cr.ucenfotec.municipalidad.documentos.IDocumento;
+
 public class SolicitudCertificadoUsoSuelos extends Solicitud {
+
+	
+	public SolicitudCertificadoUsoSuelos(State estado, IDocumento documento) {
+		super(estado, documento);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public String solicitar() {

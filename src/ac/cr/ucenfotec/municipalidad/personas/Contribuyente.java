@@ -1,12 +1,21 @@
 package ac.cr.ucenfotec.municipalidad.personas;
 
+import java.time.LocalDate;
+
 public class Contribuyente extends Persona {
 	private String provincia;
 	private String distrito;
 	private String canton;
 	private String direccion;
 	
-	
+	public Contribuyente(String nombreCompleto, String cedulaIdentidad, String estadoCivil, LocalDate fechaNacimiento,
+			boolean estado, String provincia, String distrito, String canton, String direccion) {
+		super(nombreCompleto, cedulaIdentidad, estadoCivil, fechaNacimiento, estado);
+		this.provincia = provincia;
+		this.distrito = distrito;
+		this.canton = canton;
+		this.direccion = direccion;
+	}
 	public String getProvincia() {
 		return provincia;
 	}
